@@ -50,9 +50,9 @@ if __name__ == '__main__':
     playersPosition = 0                                     # set the initial player's position at 0
     for i in [0, 1, 2, 3]:
         print("You are at the " + str(playersPosition)+" position.")
-        dice1 = random.randint(1, 6)                            # throw the first dice
-        dice2 = random.randint(1, 6)                            # throw the second dice
-        total_dices = dice1 + dice2                             # total
+        dice1 = random.randint(1, 6)                        # throw the first dice
+        dice2 = random.randint(1, 6)                        # throw the second dice
+        total_dices = dice1 + dice2                         # total
 
         print("You must advance " + str(total_dices) + " spaces.")
 
