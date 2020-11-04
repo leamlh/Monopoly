@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
     walletAmount = 1500                                     # set the initial wallet amount at 1500 dollars
     playersPosition = 0                                     # set the initial player's position at 0
-    for i in [0, 1, 2, 3, 4, 6, 7, 8, 9]:
+    for i in [0, 1, 2, 3]:
         print("You are at the " + str(playersPosition)+" position.")
         dice1 = random.randint(1, 6)                            # throw the first dice
         dice2 = random.randint(1, 6)                            # throw the second dice
@@ -57,5 +57,5 @@ if __name__ == '__main__':
         print("You must advance " + str(total_dices) + " spaces.")
 
         playersPosition = playersPosition + total_dices
-        print("You are now at the " + str(playersPosition) + " position. You are currently at "
-              + mon_dict[playersPosition])
+        print("You are now at the " + str(playersPosition) + " position")
+        print(mon_dict.get(playersPosition))
